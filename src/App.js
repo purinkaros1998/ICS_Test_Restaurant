@@ -7,14 +7,15 @@ import Content from './components/layouts/Content';
 
 const App = () => {
   return <>
-    <Layout>
-      <HeaderLayout />
-      <SiderLayout />
+    <div className="wrapper">
       <Layout>
-        <Content />
+        <HeaderLayout />
+        <Layout>
+          <SiderLayout />
+          <Content />
+        </Layout>
       </Layout>
-    </Layout>
-
+    </div>
   </>
 }
 
